@@ -17,8 +17,8 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
 
-    - name: Use Node.js 14
     - uses: actions/setup-node@v1
+    - name: Use Node.js 14
       working-directory: ./DotnetTemplate.Web
       with:
         node-version: '14'
