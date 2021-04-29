@@ -16,12 +16,12 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-
-    - uses: actions/setup-node@v1
+    
     - name: Use Node.js 14
-      working-directory: ./DotnetTemplate.Web
+      uses: actions/setup-node@v1
       with:
         node-version: '14'
+      working-directory: ./DotnetTemplate.Web
       run: npm ci
       run: npm run build --if-present
       run: npm test
