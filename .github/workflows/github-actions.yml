@@ -22,4 +22,7 @@ jobs:
         node-version: '14'
     - name: Use Node.js 14
       working-directory: ./DotnetTemplate.Web
-      run: npm ci
+      run: | 
+        npm ci
+        npm run build
+        npm test
