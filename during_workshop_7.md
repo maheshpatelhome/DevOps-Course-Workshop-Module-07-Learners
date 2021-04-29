@@ -25,9 +25,7 @@ This repository contains a minimal .NET Core app. You don't need to worry about 
 ![Mini app](img/mini-app.png)
 
 #### Test
-1. Run `dotnet test` inside the project folder. This will run the C# tests in the DotnetTemplate.Web.Tests project.
-2. Run `npm t` inside the DotnetTemplate.Web folder. This will run the typescript tests in DotnetTemplate.Web/Scripts/spec. They're run using [Jasmine](https://jasmine.github.io/).
-3. Run `npm run lint` inside the DotnetTemplate.Web folder. This will run linting on the typescript code, using [eslint](https://eslint.org/). Linting refers to checking the codebase for mistakes, either functional or stylistic. This project's linting currently reports zero errors, one warning.
+n
 
 ### Step 3 - Set up GitHub Actions
 
