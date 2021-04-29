@@ -24,5 +24,7 @@ jobs:
       working-directory: ./DotnetTemplate.Web
       run: | 
         npm ci
+        npm run lint
         npm run build
         npm test
+        
